@@ -29,7 +29,7 @@ public class Test {
 		// testJdbc();
 		// testDateSource();
 		testS3Hibernate();
-		
+
 	}
 
 	private static void testJdbc() {
