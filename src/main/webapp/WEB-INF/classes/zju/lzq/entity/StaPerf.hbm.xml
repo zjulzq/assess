@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zju.lzq.entity">
+
+	<class name="StaPerf" table="STAPERF_TABLE">
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">STAPERF_SEQ</param>
+			</generator>
+		</id>
+		<many-to-one name="employee" column="FK_EMP_ID"></many-to-one>
+		<property name="year" column="YEAR" precision="4" scale="0"></property>
+		<property name="month" column="MONTH" precision="2" scale="0"></property>
+		<property name="amount" column="AMOUNT" precision="10" scale="3">
+		</property>
+		<property name="prcDate" column="PRC_DATE" type="date"></property>
+	</class>
+
+</hibernate-mapping>

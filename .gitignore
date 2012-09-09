@@ -1,0 +1,8 @@
+#.gitignore for assess
+
+#.gitignore
+#.classpath
+#.project
+#.settings/
+target/
+

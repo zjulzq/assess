@@ -1,0 +1,6 @@
+DefaultResourcePath=/assess/src/main/resources
+DefaultRootPackage=zju.lzq
+DefaultSrcPath=/assess/src/main/java
+ServletPath=/assess
+WebContentsRoot=src/main/webapp
+eclipse.preferences.version=1

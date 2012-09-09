@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zju.lzq.entity">
+
+	<class name="Performance" table="PERFORMANCE_TABLE">
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">PERFORMANCE_SEQ</param>
+			</generator>
+		</id>
+		<many-to-one name="employee" column="FK_EMP_ID"></many-to-one>
+		<property name="actTime" column="ACT_TIME" type="date"></property>
+		<property name="amount" column="AMOUNT" precision="10" scale="3">
+		</property>
+		<property name="businessId" column="BUSINESS_ID" length="100"></property>
+		<property name="prcDate" column="PRC_DATE" type="date"></property>
+	</class>
+
+</hibernate-mapping>

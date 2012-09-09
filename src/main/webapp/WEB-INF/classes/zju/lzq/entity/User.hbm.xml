@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zju.lzq.entity">
+
+	<class name="User" table="USER_TABLE">
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">USER_SEQ</param>
+			</generator>
+		</id>
+		<many-to-one name="name" column="FK_NAME_ID"></many-to-one>
+		<property name="password" column="PASSWORD" length="100"></property>
+		<property name="auth" column="AUTH" precision="10" scale="0"></property>
+		<property name="prcDate" column="PRC_DATE" type="date"></property>
+	</class>
+
+</hibernate-mapping>

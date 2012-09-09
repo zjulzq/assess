@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="zju.lzq.entity">
+
+	<class name="Employee" table="EMP_TABLE">
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">EMP_SEQ</param>
+			</generator>
+		</id>
+
+		<many-to-one name="department" column="FK_DEPT_ID"></many-to-one>
+		<property name="code" column="CODE" length="100"></property>
+		<many-to-one name="position" column="FK_POS_ID"></many-to-one>
+		<many-to-one name="name" column="FK_NAME_ID"></many-to-one>
+		<many-to-one name="contact" column="FK_CONTACT_ID"></many-to-one>
+		<many-to-one name="contract" column="FK_CONTRACT_ID"></many-to-one>
+		<property name="prcDate" column="PRC_DATE" type="date"></property>
+	</class>
+
+</hibernate-mapping>
