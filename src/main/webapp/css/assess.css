@@ -1,27 +1,3 @@
 h1 {
 	color: red;
 }
-
-div.panel, p.flip {
-	margin: 0px;
-	padding: 5px;
-	text-align: center;
-	background: #e5eecc;
-	border: solid 1px #c3c3c3;
-}
-
-div.panel {
-	height: 120px;
-	display: none;
-}
-
-table{
-	display: none;
-}
-
-#box{
-	background: #98bf21;
-	height: 100px;
-	width: 100px;
-	position: relative;
-}
