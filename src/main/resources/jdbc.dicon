@@ -63,7 +63,7 @@
 			"oracle.jdbc.driver.OracleDriver"
 		</property>
 		<property name="URL">
-			"jdbc:oracle:thin:@192.168.1.3:1521:orcl"
+			"jdbc:oracle:thin:@192.168.0.112:1521:orcl"
 		</property>
 		<property name="user">"lzq"</property>
 		<property name="password">"3021"</property>
