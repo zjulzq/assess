@@ -9,5 +9,6 @@
   <include path="kuina-dao.dicon"/>
   <include path="dxo.dicon"/>
   <include path="j2ee.dicon"/>
-  <include path="jdbc.dicon"/>
+  <include path="s2container.dicon"/>
+  
 </components>

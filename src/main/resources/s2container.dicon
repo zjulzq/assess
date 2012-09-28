@@ -4,5 +4,6 @@
 <components>
     <include condition="#ENV == 'ut'" path="warmdeploy.dicon"/>
     <include condition="#ENV == 'ct'" path="hotdeploy.dicon"/>
-    <include condition="#ENV != 'ut' and #ENV != 'ct'" path="cooldeploy.dicon"/>
+    <include condition="#ENV != 'ut' and #ENV != 'ct'" path="cooldeploy.dicon"/>    
+    <include path="daos.dicon"/>
 </components>
